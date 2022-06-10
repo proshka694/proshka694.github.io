@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+
+    <body>
+
+    <p><h3>1)Bиведення значень в об'єкт<br>Дана сторона квадрата a = 31. Знайти периметр P квадрата і площу S</h3>
+    <div id="ex1_s"></div>
+    <div id="ex1_p"></div>
+    <script>
+        let a, S, P;
+        a = 31;
+        S = a ** 2;
+        P = 4 * a;
+        document.getElementById('ex1_s').textContent = 'S = ' + S;
+        document.getElementById('ex1_p').textContent = 'P = ' + P;
+    </script>
+      <img src="11.1..jpg" width="700" alt=""><br>
+
+    <p><h3>2)Bиведення значень методом document.write<br>Дана сторона квадрата a = 31. Знайти периметр P квадрата і площу S</h3>
+    <div id="ex2_s"></div>
+    <div id="ex2_p"></div>
+    <script>
+        let a2, S2, P2;
+        a2 = 31;
+        S2 = a2 ** 2
+        P2 = 4 * a2
+        document.write('P = ' + P2 + "<br>");
+        document.write('S = ' + S2);
+    </script>
+        <img src="11.1.jpg" width="700" alt=""><br>
+
+    <p><h3>3)Bиведення значень в об'єкт<br>Дано сторони прямокутника a = 31 і b = 55. Знайти його площу S і периметр P. Вивести умову задачі, початкові значення та результуючі.</h3>
+    <div id="ex3_a"></div>
+    <div id="ex3_b"></div>
+    <div id="ex3_s"></div>
+    <div id="ex3_p"></div>
+    <input type="button" value="Отримати результат" onclick="ex3()">
+    <script>
+        let a3, b3, S3, P3;
+
+        function ex3() {
+            a3 = 31;
+            b3 = 55;
+            S3 = a3 * b3;
+            P3 = 2 * (a3 + b3);
+            document.getElementById('ex3_a').textContent = 'a = ' + a3;
+            document.getElementById('ex3_b').textContent = 'b = ' + b3;
+            document.getElementById('ex3_s').textContent = 'S = ' + S3;
+            document.getElementById('ex3_p').textContent = 'P = ' + P3;
+        }
+    </script>
+      <img src="kf,11.jpg" width="700" alt=""><br>
+
+    <p><h3>4)Циклічний алгоритм (виведення значень методом document.write)<br>Намалювати N зірочек в стовпчик</h3>
+    <div>Нехай N = 15, тоді:</div>
+    <div id="ex4"></div>
+    <img src="ex4.png" width="700" alt=""><br>
+    <script>
+        let n = 15, i;
+        for (i = 1; i <= n; i++){
+            document.write("*" + "<br>")
+        }
+
+    </script>
+
+    <p><h3>5)Циклічний алгоритм вкладені цикли (виведення значень методом document.write)<br>Намалювати * в N рядках кількість зірочок в кожному рядку = номеру рядка</h3>
+    <div>Нехай N = 15, тоді:</div>
+    <img src="11.3.jpg" width="700" alt="ex5"><br>
+    <div id="ex5"></div>
+    <script>
+        let n1 = 15, i1, j;
+        for (i1 = 1; i1 <= n1; i1++){
+            for (j = 1; j <= i1; j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+    </script>
+
+    </body>
+</html>
